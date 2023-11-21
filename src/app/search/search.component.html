@@ -1,0 +1,23 @@
+<div>
+  <input [(ngModel)]="searchTerm" placeholder="Ingrese el término de búsqueda">
+  <button (click)="search()">Buscar</button>
+</div>
+
+<table *ngIf="searchResults.length > 0">
+  <thead>
+    <tr>
+      <th>Nombre del país</th>
+      <th>Población</th>
+      <th>Porcentaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let result of searchResults">
+      <td>{{ result.name }}</td>
+      <td>{{ result.population }}</td>
+      <td>{{ result.percentage }}%</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="searchResults.length === 0">No se encontraron resultados</div>
