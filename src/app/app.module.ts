@@ -7,17 +7,9 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SearchComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    CommonModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, SearchComponent],
+  imports: [BrowserModule, FormsModule, CommonModule, HttpClientModule],
   bootstrap: [AppComponent],
-  providers: []
+  providers: [],
 })
-export class AppModule { }
+export class AppModule {}
