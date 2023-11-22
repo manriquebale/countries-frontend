@@ -23,7 +23,7 @@ export class SearchComponent {
         this.noResultsFlag = this.searchResults.length === 0;
       },
       (error) => {
-        console.error('Error al realizar la búsqueda:', error);
+        console.error('Search error: ', error);
       }
     );
   }
