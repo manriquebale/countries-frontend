@@ -12,6 +12,6 @@ export class CountriesService {
 
   searchCountries(searchTerm: string): Observable<any[]> {
     const url = `${this.apiUrl}/countries?searchTerm=${searchTerm}`;
-    return this.httpClient.get<any[]>(url); 
+    return this.httpClient.get<any[]>(url);
   }
 }
