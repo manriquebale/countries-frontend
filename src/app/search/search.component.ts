@@ -7,19 +7,19 @@ import { CountriesService } from '../countries.service';
   selector: 'app-search',
   standalone: true,
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css'],
-  imports: [FormsModule, CommonModule],
+  styleUrls: ['./search.component.css'], 
+  imports: [FormsModule, CommonModule,],
 })
 export class SearchComponent {
   searchTerm: string = '';
-  searchResults: any = [];
+  searchResults: any[] = [];
 
   constructor(private countriesService: CountriesService) {}
 
   search(): void {
     this.countriesService.searchCountries(this.searchTerm).subscribe(
-      (data) => {
-        this.searchResults = data;
+      (results) => {
+        this.searchResults = results;
       },
       (error) => {
         console.error('Error al realizar la búsqueda:', error);

@@ -1,6 +1,6 @@
-<div class="container">
+<div>
   <input [(ngModel)]="searchTerm" placeholder="Ingrese el término de búsqueda" *ngIf="searchTerm !== undefined">
-  <button class="btn btn-primary" (click)="search()">Buscar</button>
+  <button (click)="search()">Buscar</button>
 </div>
 
 <table *ngIf="searchResults.length > 0">
@@ -20,4 +20,4 @@
   </tbody>
 </table>
 
-<div  class="alert alert-danger" *ngIf="searchResults.length === 0">No se encontraron resultados</div>
+<div *ngIf="searchResults.length === 0">No se encontraron resultados</div>
