@@ -11,5 +11,5 @@ import { SearchComponent } from './search/search.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'countries-frontend';
+  title = 'Countries List';
 }
