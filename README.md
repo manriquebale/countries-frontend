@@ -11,10 +11,10 @@ It serves as the frontend for the Countries application, connecting to a service
 - **No Results Message:** In case the service doesn't return any results, a message indicating "No results found" will be displayed.
 
 
-**Install Dependencies:**
-    Run `npm install` to install all dependencies.
+## Install Dependencies
+    - Run `npm install` to install all dependencies.
 
-    Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 
 ## Running unit tests
