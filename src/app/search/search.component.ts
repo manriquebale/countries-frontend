@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { CountriesService } from '../countries.service';
-import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-search',
   standalone: true,
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'], 
-  imports: [FormsModule],
- // providers: [CountriesService]
+  imports: [FormsModule, CommonModule,],
 })
 export class SearchComponent {
   searchTerm: string = '';

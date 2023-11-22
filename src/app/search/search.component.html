@@ -1,5 +1,5 @@
 <div>
-  <input [(ngModel)]="searchTerm" placeholder="Ingrese el término de búsqueda">
+  <input [(ngModel)]="searchTerm" placeholder="Ingrese el término de búsqueda" *ngIf="searchTerm !== undefined">
   <button (click)="search()">Buscar</button>
 </div>
 
